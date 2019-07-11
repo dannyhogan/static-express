@@ -12,6 +12,8 @@ getColors()
       li.style.color = '#' + color.hex;
 
       const a = document.createElement('a');
+      a.href = `/color.html?color=${color.name}`;
+
       a.appendChild(li);
       ul.appendChild(a);
     });
